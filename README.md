@@ -43,11 +43,13 @@ Mario Kart as well as other keyboard games are interesting for most age groups, 
             "value": "\"thepassword\""
         ```  
         ii. Go to cmd to find your server’s IP address:  
+        
         In cmd, type in  
         ```bash
         ipconfig /all
         ````
-        then you will see in one row IPv4 Address, and your server's IP address comes right after.  
+        then you will see in one row that says IPv4 Address, and your server's IP address comes right after.  
+        
         iii. Change the IP address in ./mbed_final/wifi.cpp to your server’s IP address
 
     - Python:
