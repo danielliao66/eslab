@@ -42,12 +42,17 @@ Mario Kart as well as other keyboard games are interesting for most age groups, 
             "help": "WiFi Password",
             "value": "\"thepassword\""
         ```  
-        ii. Go to cmd to find your server’s IP address (ipconfig) 
-        iii. Change the IP address in wifi.cpp to your server’s IP address
+        ii. Go to cmd to find your server’s IP address:  
+        In cmd, type in  
+        ```bash
+        ipconfig /all
+        ````
+        then you will see in one row IPv4 Address, and your server's IP address comes right after.  
+        iii. Change the IP address in ./mbed_final/wifi.cpp to your server’s IP address
 
     - Python:
 
-        iv.	Go to server.py and change the host to your server’s IP address and make sure the wifi is the same as stm32's, i.e. the one stated in iii.
+        iv.	Go to ./python/server.py and change the host to your server’s IP address and make sure the wifi is the same as stm32's, i.e. the one mentioned in iii.
 
     b.	Stm32  
 
@@ -56,7 +61,7 @@ Mario Kart as well as other keyboard games are interesting for most age groups, 
         i. top button should connect to D2  
         ii. left button should connect to D1  
         iii. right button should connect to D0  
-        ***please check out the [link]() for more information about the ports on stm32***
+        ***please check out the [manual](https://www.st.com/resource/en/user_manual/dm00347848-discovery-kit-for-iot-node-multichannel-communication-with-stm32l4-stmicroelectronics.pdf) (p.10) for more information about the ports on stm32***
 
 4.	Start playing
 
