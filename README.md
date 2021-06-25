@@ -1,0 +1,69 @@
+# eslab
+esys_final_project
+====
+**Authors:** [陳妍喻](https://github.com/yenyuuuuu), 
+[門玉仁](https://github.com/dennismenn) and 
+[廖耕毅](https://github.com/danielliao66)
+
+
+## Introduction 
+This is a embedded-system project based on open source codes for games, which implements gamepad to control keyboard using STM32. We intended to design stm32 as a video game controller which can easily adapt on different keyboard-controlled video games with sensitive controlling, low energy consideration and some user friendly designs. Specifically, we will demonstrate our project on Mario kart game and pong.
+
+## Motivation
+Mario Kart as well as other keyboard games are interesting for most age groups, but is it possible to take a step further? In this project, we use STM32 as game controller, and we expect to have a better gaming experience than using keyboard. The first game we play is an open source game project, [Süper Mario Kart](https://github.com/vmbatlle/super-mario-kart), and the second game we demonstrate is pong.
+
+## Dowload Steps
+1.	Download repository
+2.	Prerequisites:
+
+    **controller**  
+    a. MBED OS 6.x (Mbed Studio)  
+    b. Python 3.7 + keyboard package (pip install)  
+    c. Stm32L4 (B-L475E-IOT01A)  
+    d. Wires  
+    e.	3 buttons  
+    **mario kart game**  
+    f. MinGW32 posix 8.1.0 or GCC 7.5.0 (C++ 11 compiler)  
+    g. SFML 2.5.1 (graphics generation and audio playback)  
+    h. OpenAL (cross-platform API for 3D audio)  
+       ***please check out the [link](https://github.com/vmbatlle/super-mario-kart#21-prerequisites) for more information about compiling the game on your own***
+
+3.	Settings
+
+    a.	Wifi
+    - MBED:
+
+        i. Go to ./mbed_final/mbed_app.json and change wifi-ssid and wifi password to your own wifi, a snippet below:  
+        ```bash
+        "wifi-ssid": {
+            "help": "WiFi SSID",
+            "value": "\"thessid\""
+        },
+        "wifi-password": {
+            "help": "WiFi Password",
+            "value": "\"thepassword\""
+        ```  
+        ii. Go to cmd to find your server’s IP address (ipconfig) 
+        iii. Change the IP address in wifi.cpp to your server’s IP address
+
+    - Python:
+
+        iv.	Go to server.py and change the host to your server’s IP address and make sure the wifi is the same as stm32's, i.e. the one stated in iii.
+
+    b.	Stm32  
+
+    - Equip 3 buttons on stm32 
+    
+        i. top button should connect to D2  
+        ii. left button should connect to D1  
+        iii. right button should connect to D0  
+        ***please check out the [link]() for more information about the ports on stm32***
+
+4.	Start playing
+
+    a.	launch server.py  
+    b. connect stm32  
+    c. start your game   
+    d. enjoy
+
+
