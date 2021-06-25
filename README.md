@@ -1,4 +1,3 @@
-# eslab
 esys_final_project
 ====
 **Authors:** [陳妍喻](https://github.com/yenyuuuuu), 
@@ -33,7 +32,7 @@ Mario Kart as well as other keyboard games are interesting for most age groups, 
     a.	Wifi
     - MBED:
 
-        i. Go to ./mbed_final/mbed_app.json and change wifi-ssid and wifi password to your own wifi, a snippet below:  
+        i. Go to ./mbed_final/mbed_app.json and change wifi-ssid and wifi password to your own wifi:  
         ```bash
         "wifi-ssid": {
             "help": "WiFi SSID",
